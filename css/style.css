@@ -20,7 +20,8 @@ h6 {
 a {
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
-    color: #fbaf32;
+    /* color: #fbaf32;   */
+    color: #E8C224;
     transition: .3s;
 }
 
