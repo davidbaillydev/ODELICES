@@ -940,6 +940,11 @@ img {
 @media (max-width: 1200px) {
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
+        
+    }
+    
+    .hero-text h1, .carousel-text h1 {
+        font-size: 48px;
     }
 }
 
@@ -952,12 +957,48 @@ img {
         font-size: 42px;
     }
     
+    .hero-text p, .carousel-text p {
+        font-size: 18px;
+        
+    }
+    
     .hours-grid {
         grid-template-columns: 1fr;
+        gap: 10px;
     }
     
     .footer-newsletter {
         margin-top: 30px;
+    }
+    
+    .navbar-collapse {
+        background: rgba(26, 26, 26, 0.98);
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 15px;
+    }
+    
+    .navbar-nav {
+        text-align: center;
+    }
+    
+    .navbar-nav .nav-link {
+        margin: 10px 0;
+        padding: 10px;
+    }
+    
+    .navbar .btn {
+        margin: 15px auto;
+        display: block;
+        width: fit-content;
+    }
+    
+    .services .row > div,
+    .about .row > div,
+    .testimonials .row > div,
+    .menu .row > div,
+    .contact .contact-information > div {
+        margin-bottom: 30px;
     }
 }
 
@@ -981,6 +1022,11 @@ img {
     
     .section-header h2 {
         font-size: 32px;
+    }
+    
+    .section-header p {
+        font-size: 14px;
+        letter-spacing: 1px;
     }
     
     .navbar-nav {
@@ -1043,6 +1089,87 @@ img {
         font-size: 24px;
         bottom: 90px;
     }
+    
+    .quality-badges .row > div {
+        margin-bottom: 15px;
+    }
+    
+    .badge-item {
+        padding: 15px;
+    }
+    
+    .badge-item i {
+        font-size: 28px;
+    }
+    
+    .badge-item span {
+        font-size: 12px;
+    }
+    
+    .hours-card {
+        padding: 20px;
+    }
+    
+    .hours-card h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    
+    .hours-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+        padding: 12px;
+    }
+    
+    .hours-item .day,
+    .hours-item .time {
+        width: 100%;
+    }
+    
+    .service-item, .food-item {
+        padding: 25px 20px;
+    }
+    
+    .service-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 28px;
+    }
+    
+    .testimonial-item {
+        padding: 20px;
+    }
+    
+    .testimonial-author {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .contact-information {
+        margin-bottom: 30px;
+    }
+    
+    .google-maps iframe {
+        height: 300px;
+    }
+    
+    .footer {
+        padding: 40px 0 20px;
+    }
+    
+    .footer h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .footer-link a {
+        margin-bottom: 8px;
+    }
+    
+    .footer-newsletter {
+        padding: 20px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -1056,11 +1183,13 @@ img {
     
     .hero-text p, .carousel-text p {
         font-size: 16px;
+      
     }
     
     .btn-primary, .custom-btn {
         padding: 12px 25px;
         font-size: 14px;
+    
     }
     
     .section-header h2 {
@@ -1093,6 +1222,11 @@ img {
     
     .gallery-grid {
         grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+    
+    .gallery-item {
+        aspect-ratio: 1;
     }
     
     .testimonial-item {
@@ -1103,6 +1237,39 @@ img {
         flex-direction: column;
         text-align: center;
     }
+    
+    .contact-info {
+        padding: 15px;
+    }
+    
+    .contact-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+    
+    .navbar {
+        padding: 10px 15px;
+    }
+    
+    .navbar-brand img {
+        height: 40px;
+    }
+    
+    .menu-tab .nav-pills {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 10px;
+    }
+    
+    .menu-tab .nav-pills .nav-link {
+        white-space: nowrap;
+    }
+    
+    .google-maps iframe {
+        height: 250px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1112,10 +1279,12 @@ img {
     
     .hero-text h1, .carousel-text h1 {
         font-size: 24px;
+        
     }
     
     .hero-text {
         padding: 20px;
+         height: 500px;
     }
     
     .hero-text p, .carousel-text p {
@@ -1143,6 +1312,60 @@ img {
         flex-direction: column;
         text-align: center;
         gap: 5px;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .badge-item i {
+        font-size: 24px;
+    }
+    
+    .badge-item span {
+        font-size: 11px;
+    }
+    
+    .service-item {
+        padding: 20px 15px;
+    }
+    
+    .service-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+    }
+    
+    .contact-text h3 {
+        font-size: 18px;
+    }
+    
+    .footer-newsletter input {
+        padding: 12px 15px;
+    }
+    
+    .copyright p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 375px) {
+    .hero-text h1, .carousel-text h1 {
+        font-size: 22px;
+    }
+    
+    .section-header h2 {
+        font-size: 22px;
+    }
+    
+    .btn-primary, .custom-btn {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+    
+    .navbar-brand img {
+        height: 35px;
     }
 }
 
