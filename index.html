@@ -479,6 +479,31 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- <div style="text-align: center; margin: 30px 0;">
+    <button id="open-game-btn" style="padding: 18px 30px; background: #D32F2F; color: white; border: none; border-radius: 12px; cursor: pointer; font-weight: bold; font-size: 18px; box-shadow: 0 6px 15px rgba(211, 47, 47, 0.4); text-transform: uppercase; transition: transform 0.2s;">
+        🎁 Cliquez ici pour votre cadeau !
+    </button>
+</div>
+
+<div id="game-popup-overlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); z-index:99999; justify-content:center; align-items:center; backdrop-filter: blur(8px); padding: 20px; font-family: sans-serif;">
+    
+    <div style="position:relative; width:100%; max-width:400px; height:650px; background:transparent;">
+        
+        <button id="close-game-btn" 
+                style="position:absolute; top:-15px; right:-5px; z-index:100001; background:#ffcc00; color:#1a1a1a; border:none; border-radius:50%; width:40px; height:40px; cursor:pointer; font-size:22px; font-weight:bold; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display:flex; justify-content:center; align-items:center;">
+          ✕
+        </button>
+
+      <iframe 
+    id="game-iframe"
+    src="" 
+    style="width:100%; height:100%; border:none; border-radius:25px; background: transparent; box-shadow: 0 15px 40px rgba(0,0,0,0.6);" 
+    allow="clipboard-write"
+    allowtransparency="true">
+</iframe>
+    </div>
+</div> -->
                 <div class="col-lg-6">
                     <div class="footer-newsletter">
                         <h2>Recevez nos Promotions</h2>
@@ -500,6 +525,7 @@
                 <p>Propulsé par <a href="https://lcdigitale.fr">LC DIGITALE AGENCY</a></p>
             </div>
         </div>
+
     </footer>
 
     <!-- Scripts Gloria Food -->
@@ -580,6 +606,62 @@
             }
         });
     </script>
+
+
+<script>
+    function openGamePopup() {
+        const overlay = document.getElementById('game-popup-overlay');
+        const iframe = document.getElementById('game-iframe');
+        
+        if(overlay && iframe) {
+            // On définit les données du resto
+            const name = "Chick n Co Gaillac";
+            const logo = "https://chickncogaillac.fr/img/chickenco/logoco.png";
+            const google = "https://g.page/r/CRXp7SYNjVbeEAE/review";
+            
+            // On construit l'URL du jeu
+            const gameUrl = `https://restaurantgame.netlify.app/?name=${encodeURIComponent(name)}&logo=${encodeURIComponent(logo)}&google=${encodeURIComponent(google)}`;
+            
+            // On injecte l'URL et on affiche
+            iframe.src = gameUrl;
+            overlay.style.display = 'flex';
+            
+            // Optionnel : bloque le scroll du site derrière la popup
+            document.body.style.overflow = 'hidden';
+        }
+    }
+
+    // Fonction pour fermer la popup (à lier à ton bouton ✕)
+    function closeGamePopup() {
+        const overlay = document.getElementById('game-popup-overlay');
+        const iframe = document.getElementById('game-iframe');
+        if(overlay) overlay.style.display = 'none';
+        if(iframe) iframe.src = ''; // Stop le jeu
+        document.body.style.overflow = ''; // Redonne le scroll
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        // Lancement auto après 3 secondes
+        setTimeout(openGamePopup, 3000);
+        
+        // On lie aussi le bouton manuel si besoin
+        const btn = document.getElementById('open-game-btn');
+        if(btn) btn.addEventListener('click', openGamePopup);
+        
+        // On lie le bouton fermer
+        const closeBtn = document.getElementById('close-game-btn');
+        if(closeBtn) closeBtn.addEventListener('click', closeGamePopup);
+    });
+</script>
+
+
+
+
+
+
+
+
+
 </body>
 </html>
 
