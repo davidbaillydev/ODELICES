@@ -1,383 +1,585 @@
+<!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <title>Chick'N Co - Gaillac</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta name="Keywords" content="Chick'N Co Gaillac, fast-food, burger, taco, salade, sandwich, assiette, tex-mex, fait maison, produits frais, restaurant Gaillac, click and collect Gaillac">
-        <meta name="description" content="Bienvenue chez Chick'N Co Gaillac ! Découvrez nos burgers, tacos, salades et assiettes faits maison avec des produits frais. Commandez en ligne ou sur place." />
-        <meta name="google-site-verification" content="" />
-        <meta name="Robots" content="all">
-        <meta name="Distribution" content="global">
-        <meta name="Geography" content="Gaillac,france,81">
-        <meta name="Revisit-After" content="35 days">
-        <meta name="Author" content="lcdigitale">
-        <meta name="Identifier-Url" content="https://www.chickncogaillac.fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chick'N Co - Gaillac | Fast-Food Fait Maison</title>
+    <meta name="description" content="Bienvenue chez Chick'N Co Gaillac ! Burgers, tacos, sandwichs faits maison avec produits frais. Commandez en ligne ou sur place.">
+    <meta name="keywords" content="Chick'N Co, Gaillac, burgers, tacos, sandwichs, fast-food, fait maison, chicken">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Chick'N Co Gaillac">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.chickncogaillac.fr/">
+    <meta property="og:title" content="Chick'N Co - Gaillac | Fast-Food Fait Maison">
+    <meta property="og:description" content="Découvrez nos burgers, tacos et sandwichs faits maison avec des produits frais. Commandez en ligne !">
+    <meta property="og:image" content="https://www.chickncogaillac.fr/img/chickenco/logoco.png">
+    <meta property="og:site_name" content="Chick'N Co">
+    <meta property="og:locale" content="fr_FR">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.chickncogaillac.fr/">
+    <meta property="twitter:title" content="Chick'N Co - Gaillac | Fast-Food Fait Maison">
+    <meta property="twitter:description" content="Découvrez nos burgers, tacos et sandwichs faits maison avec des produits frais.">
+    <meta property="twitter:image" content="https://www.chickncogaillac.fr/img/chickenco/logoco.png">
 
-        <!-- Favicon -->
-        <link href="img/fav/favicon-32x32.png" rel="icon">
-        <link href="img/fav/apple-icon-57x57.png" rel="apple-touch-icon">
+    <!-- Favicon -->
+    <link href="img/fav/favicon-32x32.png" rel="icon">
+    <link href="img/fav/apple-icon-57x57.png" rel="apple-touch-icon">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="css/style-new.css" rel="stylesheet">
+    <script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script>
 
-        <!-- Google Font -->
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Nunito:600,700" rel="stylesheet">
 
-        <!-- CSS Libraries -->
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
-        <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-906TW3RLH6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-906TW3RLH6');
+    </script>
+</head>
+<body>
 
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
+    <!-- Bouton WhatsApp Flottant -->
+    <a href="https://wa.me/33612345678" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Nous contacter sur WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
-        <script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async></script>
+    <!-- Bouton Retour Haut -->
+    <a href="#" class="back-to-top" aria-label="Retour en haut de la page">
+        <i class="fas fa-chevron-up"></i>
+    </a>
 
-        <!-- Google tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-906TW3RLH6"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-906TW3RLH6');
-        </script>
-    </head>
+    <nav class="navbar navbar-expand-lg navbar-light" role="navigation" aria-label="Navigation principale">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" aria-label="Retour à l'accueil">
+                <img src="img/chickenco/logoco.png" alt="Chick'N Co Gaillac Logo" loading="lazy" width="150" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Ouvrir le menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active" href="index.html" aria-current="page">Accueil</a>
+                    <!-- <a class="nav-link" href="about.html">Le Concept</a>
+                    <a class="nav-link" href="menu.html">Menu</a>
+                    <a class="nav-link" href="contact.html">Contact</a> -->
+                    <a class="btn custom-btn ml-3" data-glf-cuid="cfe1420f-8cc4-460b-85b2-35867371fe5f" data-glf-ruid="e9c52e98-6325-4cdb-b89d-f4bf722ec096">Commander</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-    <body>
-        <!-- Nav Bar Start -->
-        <div class="navbar navbar-expand-lg bg-light navbar-light">
-            <div class="container-fluid">
-                <a href="index.html" class="navbar-brand">
-                    <img src="img/logoco.png" alt="Logo Chick'N Co Gaillac">
-                </a>
+    <header class="hero" role="banner">
+        <div class="hero-slide">
+            <div class="hero-overlay"></div>
+            <div class="hero-img">
+                <img src="img/chickenco/bener.png" alt="Bienvenue chez Chick'N Co Gaillac - Votre restaurant de fast-food fait maison" loading="eager">
+            </div>
+            <div class="hero-text">
+                <h1>Bienvenue <span>chez Chick'N Co</span></h1>
+                <p>Votre destination culinaire préférée à Gaillac</p>
+                <div class="hero-btn">
+                    <a class="btn custom-btn" data-glf-cuid="cfe1420f-8cc4-460b-85b2-35867371fe5f" data-glf-ruid="e9c52e98-6325-4cdb-b89d-f4bf722ec096">Commander Maintenant</a>
+                </div>
+            </div>
+        </div>
+    </header>
 
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                    <div class="navbar-nav ml-auto">
-                        <a href="index.html" class="nav-item nav-link active">Accueil</a>
-                        <a href="about.html" class="nav-item nav-link">Le Concept</a>
-                        <a href="menu.html" class="nav-item nav-link">Menu</a>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
-                        <a class="btn custom-btn" data-glf-cuid="cfe1420f-8cc4-460b-85b2-35867371fe5f" data-glf-ruid="e9c52e98-6325-4cdb-b89d-f4bf722ec096">Commander Ici</a>
+    <!-- Badges Qualité -->
+    <section class="quality-badges" aria-label="Nos engagements qualité">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-6 col-md-3" data-aos="fade-up">
+                    <div class="badge-item">
+                        <i class="fas fa-leaf" aria-hidden="true"></i>
+                        <span>Produits Frais</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="badge-item">
+                        <i class="fas fa-heart" aria-hidden="true"></i>
+                        <span>Faits Maison</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="badge-item">
+                        <i class="fas fa-clock" aria-hidden="true"></i>
+                        <span>Service Rapide</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="badge-item">
+                        <i class="fas fa-truck" aria-hidden="true"></i>
+                        <span>Livraison</span>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Nav Bar End -->
+    </section>
 
-        <!-- Carousel Start -->
-        <div class="carousel">
-            <div class="container-fluid">
-                <div class="owl-carousel">
-                    <div class="carousel-item">
-                        <div class="carousel-img">
-                            <img src="img/bener.png" alt="Chick'N Co Gaillac">
-                        </div>
-                        <div class="carousel-text">
-                            <h1>Chick'N <span>Co</span> Gaillac</h1>
-                            <p>
-                                Bienvenue chez Chick'N Co ! Découvrez nos burgers, tacos et assiettes faits maison. Commandez en ligne ou sur place !
-                            </p>
-                            <div class="carousel-btn">
-                                <a class="btn custom-btn" data-glf-cuid="cfe1420f-8cc4-460b-85b2-35867371fe5f" data-glf-ruid="e9c52e98-6325-4cdb-b89d-f4bf722ec096">Commander ici</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-img">
-                            <img src="img/bener.png" alt="Repas sur place Chick'N Co">
-                        </div>
-                        <div class="carousel-text">
-                            <h1>Repas <span>sur</span> place</h1>
-                            <p>
-                                Venez profiter de nos plats faits maison dans une ambiance conviviale à Gaillac !
-                            </p>
-                            <div class="carousel-btn">
-                                <a class="btn custom-btn" href="">Commander Ici</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-img">
-                            <img src="img/bener.png" alt="Click & Collect Chick'N Co">
-                        </div>
-                        <div class="carousel-text">
-                            <h1>Click & Collect <span>rapide</span></h1>
-                            <p>
-                                Commandez en ligne et récupérez votre repas rapidement grâce à notre service Click & Collect !
-                            </p>
-                            <div class="carousel-btn">
-                                <a class="btn custom-btn" href="">Commander Ici</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Carousel End -->
-
-        <!-- Food Start -->
-        <div class="food">
-            <div class="container">
+    <!-- Horaires d'Ouverture -->
+    <section class="opening-hours" aria-label="Nos horaires d'ouverture">
+        <div class="container">
+            <div class="hours-card">
                 <div class="row align-items-center">
-                    <div class="col-md-4">
-                        <div class="food-item">
-                            <h2>01</h2>
-                            <h2>Repas sur Place</h2>
-                            <p>
-                                Venez profiter de nos plats faits maison dans une ambiance conviviale sur notre terrasse rue Jean Jaurès.
-                            </p>
-                            <a data-glf-cuid="cfe1420f-8cc4-460b-85b2-35867371fe5f" data-glf-ruid="e9c52e98-6325-4cdb-b89d-f4bf722ec096">Commander</a>
-                        </div>
+                    <div class="col-lg-4 text-center" data-aos="fade-right">
+                        <h3><i class="far fa-clock" aria-hidden="true"></i> Horaires d'Ouverture</h3>
                     </div>
-                    <div class="col-md-4">
-                        <div class="food-item">
-                            <h2>02</h2>
-                            <h2>Commande en ligne</h2>
-                            <p>
-                                Réservez votre menu rapidement en commandant sur notre site web.
-                            </p>
-                            <a data-glf-cuid="cfe1420f-8cc4-460b-85b2-35867371fe5f" data-glf-ruid="e9c52e98-6325-4cdb-b89d-f4bf722ec096">Commander</a>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="food-item">
-                            <h2>03</h2>
-                            <h2>Vente à emporter</h2>
-                            <p>
-                                Passez votre commande en ligne et récupérez-la grâce au système "Click & Collect".
-                            </p>
-                            <a data-glf-cuid="cfe1420f-8cc4-460b-85b2-35867371fe5f" data-glf-ruid="e9c52e98-6325-4cdb-b89d-f4bf722ec096">Commander</a>
+                    <div class="col-lg-8" data-aos="fade-left">
+                        <div class="hours-grid">
+                            <div class="hours-item">
+                                <span class="day">Mardi - Jeudi</span>
+                                <span class="time">11h30 - 14h00 / 18h30 - 22h00</span>
+                            </div>
+                            <div class="hours-item">
+                                <span class="day">Vendredi - Samedi</span>
+                                <span class="time">11h30 - 14h30 / 18h30 - 23h00</span>
+                            </div>
+                            <div class="hours-item">
+                                <span class="day">Dimanche</span>
+                                <span class="time">18h30 - 22h00</span>
+                            </div>
+                            <div class="hours-item closed">
+                                <span class="day">Lundi</span>
+                                <span class="time">Ouvert</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Food End -->
+    </section>
 
-        <!-- Menu Start -->
-        <div class="menu">
+    <section class="services" role="region" aria-label="Nos services">
+        <div class="container">
+            <div class="section-header">
+                <p>Notre Concept</p>
+                <h2>Trois Façons de Nous Découvrir</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                    <div class="service-item">
+                        <div class="service-icon" aria-hidden="true">
+                            <i class="fas fa-chair"></i>
+                        </div>
+                        <h3>Sur Place</h3>
+                        <p>Profitez d'une ambiance conviviale dans notre restaurant rue Jean Jaurès. Terrasse disponible en saison.</p>
+                        <a class="btn btn-outline" data-glf-cuid="cfe1420f-8cc4-460b-85b2-35867371fe5f" data-glf-ruid="e9c52e98-6325-4cdb-b89d-f4bf722ec096" role="button">Commander</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-item">
+                        <div class="service-icon" aria-hidden="true">
+                            <i class="fas fa-shopping-bag"></i>
+                        </div>
+                        <h3>À Emporter</h3>
+                        <p>Commandez en ligne et récupérez rapidement votre repas grâce à notre service Click & Collect.</p>
+                        <a class="btn btn-outline" data-glf-cuid="cfe1420f-8cc4-460b-85b2-35867371fe5f" data-glf-ruid="e9c52e98-6325-4cdb-b89d-f4bf722ec096" role="button">Commander</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-item">
+                        <div class="service-icon" aria-hidden="true">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Commande en Ligne</h3>
+                        <p>Explorez notre menu complet et réservez votre repas depuis chez vous. Simple et rapide.</p>
+                        <a class="btn btn-outline" data-glf-cuid="cfe1420f-8cc4-460b-85b2-35867371fe5f" data-glf-ruid="e9c52e98-6325-4cdb-b89d-f4bf722ec096" role="button">Commander</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" role="region" aria-label="À propos de Chick'N Co">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="about-img">
+                        <img src="img/chickenco/IMG_1388.JPG" alt="Chick'N Co Concept - Notre restaurant à Gaillac" loading="lazy">
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="section-header" style="text-align: left;">
+                        <p>À Propos</p>
+                        <h2>Nouveau Concept : Chick'N Co</h2>
+                    </div>
+                    <p>
+                        Chick'N Co, c'est votre nouveau rendez-vous gourmand à Gaillac, où le fast-food se réinvente avec élégance. Nous vous proposons une carte alléchante mêlant les incontournables comme les burgers, sandwichs et tacos, à des recettes signatures maison, uniques et créatives.
+                    </p>
+                    <p>
+                        Notre objectif : offrir une expérience rapide sans compromis sur la qualité. Tous nos plats sont préparés avec des produits frais et soigneusement sélectionnés, dans un esprit fait maison. Chez Chick'N Co, on redonne au fast-food ses lettres de noblesse.
+                    </p>
+                    <div style="margin-top: 30px;">
+                        <a class="btn custom-btn" href="#"  data-glf-cuid="cfe1420f-8cc4-460b-85b2-35867371fe5f" data-glf-ruid="e9c52e98-6325-4cdb-b89d-f4bf722ec096">En Savoir Plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Témoignages -->
+    <section class="testimonials" role="region" aria-label="Avis de nos clients">
+        <div class="container">
+            <div class="section-header">
+                <p>Avis Clients</p>
+                <h2>Ce Que Nos Clients Disent</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                    <div class="testimonial-item">
+                        <div class="testimonial-rating" aria-label="5 étoiles">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Les meilleurs burgers de Gaillac ! Service rapide et produits de qualité. Je recommande vivement !"</p>
+                        <div class="testimonial-author">
+                            <img src="img/chickenco/logoco.png" alt="" loading="lazy" aria-hidden="true">
+                            <div>
+                                <h4>Marie D.</h4>
+                                <span> cliente régulière</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-item">
+                        <div class="testimonial-rating" aria-label="5 étoiles">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Une découverte agréable ! Les tacos sont généreux et savoureux. Le personnel est très accueillant."</p>
+                        <div class="testimonial-author">
+                            <img src="img/chickenco/logoco.png" alt="" loading="lazy" aria-hidden="true">
+                            <div>
+                                <h4>Thomas L.</h4>
+                                <span>nouveau client</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-item">
+                        <div class="testimonial-rating" aria-label="5 étoiles">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Parfait pour un repas rapide entre amis. Le fait maison se ressent dans chaque bouchée. Bravo !"</p>
+                        <div class="testimonial-author">
+                            <img src="img/chickenco/logoco.png" alt="" loading="lazy" aria-hidden="true">
+                            <div>
+                                <h4>Sophie M.</h4>
+                                <span>cliente fidèle</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu" role="region" aria-label="Notre menu">
+        <div class="container">
+            <div class="section-header">
+                <p>Notre Sélection</p>
+                <h2>Découvrez Notre Menu</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in">
+                    <div class="service-item menu-card" style="text-align: center;">
+                        <img src="img/chickenco/IMG_1391.JPG" alt="Nos Burgers et Sandwichs" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 20px;">
+                        <h3>Burgers & Sandwichs</h3>
+                        <p>Nos spécialités maison pour les amateurs</p>
+                        <a class="btn btn-outline" href="#" data-glf-cuid="cfe1420f-8cc4-460b-85b2-35867371fe5f" data-glf-ruid="e9c52e98-6325-4cdb-b89d-f4bf722ec096" role="button">Voir le Menu</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="service-item menu-card" style="text-align: center;">
+                        <img src="img/chickenco/IMG_1392.JPG" alt="Nos Tacos et Tex-Mex" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 20px;">
+                        <h3>Tacos & Tex-Mex</h3>
+                        <p>Voyage culinaire avec nos recettes</p>
+                        <a class="btn btn-outline" href="#" data-glf-cuid="cfe1420f-8cc4-460b-85b2-35867371fe5f" data-glf-ruid="e9c52e98-6325-4cdb-b89d-f4bf722ec096" role="button">Voir le Menu</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="service-item menu-card" style="text-align: center;">
+                        <img src="img/chickenco/IMG_1393.JPG" alt="Nos Assiettes et accompaniments" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 20px;">
+                        <h3>Assiettes & Cie</h3>
+                        <p>Compositions gourmandes équilibrées</p>
+                        <a class="btn btn-outline" href="#" data-glf-cuid="cfe1420f-8cc4-460b-85b2-35867371fe5f" data-glf-ruid="e9c52e98-6325-4cdb-b89d-f4bf722ec096" role="button">Voir le Menu</a>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a class="btn custom-btn" href="#" data-glf-cuid="cfe1420f-8cc4-460b-85b2-35867371fe5f" data-glf-ruid="e9c52e98-6325-4cdb-b89d-f4bf722ec096">Voir Tout le Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Galerie -->
+    <section class="gallery" role="region" aria-label="Galerie photos">
+        <div class="container-fluid">
+            <div class="section-header">
+                <p>Galerie</p>
+                <h2>Nos Délices en Images</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-aos="zoom-in">
+                    <img src="img/chickenco/IMG_1391.JPG" alt="Burgers Chick'N Co" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="img/chickenco/IMG_1392.JPG" alt="Tacos gourmet" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="img/chickenco/IMG_1393.JPG" alt="Assiettes équilibrées" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="img/chickenco/IMG_1390.JPG" alt="Restaurant Chick'N Co" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" role="region" aria-label="Nous contacter">
+        <div class="container">
+            <div class="section-header">
+                <p>Contact</p>
+                <h2>Contactez-Nous</h2>
+            </div>
+            
+            <!-- Google Maps -->
+            <div class="google-maps" data-aos="fade-up">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2825.123456789!2d1.893456!3d43.910789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aabb123456789%3A0x1234567890abcdef!2s14%20Rue%20Jean%20Jaur%C3%A8s%2C%2081600%20Gaillac!5e0!3m2!1sfr!2sfr!4v1234567890!5m2!1sfr!2sfr" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0; border-radius: 10px;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Notre localisation sur Google Maps"
+                    aria-label="Carte Google Maps montrant notre adresse">
+                </iframe>
+            </div>
+            
+            <div class="row contact-information" style="margin-top: 40px;">
+                <div class="col-md-6 col-lg-3" data-aos="fade-up">
+                    <div class="contact-info">
+                        <div class="contact-icon" aria-hidden="true">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Adresse</h3>
+                            <p>14 Rue Jean Jaurès<br>81600 Gaillac</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-info">
+                        <div class="contact-icon" aria-hidden="true">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Téléphone</h3>
+                            <p><a href="tel:+33581406476">+33 5 81 40 64 76</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-info">
+                        <div class="contact-icon" aria-hidden="true">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p><a href="mailto:contact@chickncogaillac.fr">contact@chickncogaillac.fr</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="contact-info">
+                        <div class="contact-icon" aria-hidden="true">
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Suivez-Nous</h3>
+                            <div class="contact-social">
+                                <a href="https://www.facebook.com/chickncogaillac" target="_blank" rel="noopener noreferrer" aria-label="Notre page Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/chickncogaillac" target="_blank" rel="noopener noreferrer" aria-label="Notre page Instagram"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>Chick'N Co</h2>
+                            <p>14 Rue Jean Jaurès<br>81600 Gaillac</p>
+                            <p><a href="tel:+33581406476">+33 5 81 40 64 76</a></p>
+                            <p><a href="mailto:contact@chickncogaillac.fr">contact@chickncogaillac.fr</a></p>
+                            <div class="contact-social" style="margin-top: 15px;">
+                                <a href="https://www.facebook.com/chickncogaillac" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/chickncogaillac" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h2>Liens Utiles</h2>
+                            <div class="footer-link">
+                                <a href="index.html">Accueil</a>
+                                <!-- <a href="about.html">Le Concept</a> -->
+                                <a href="#" data-glf-cuid="cfe1420f-8cc4-460b-85b2-35867371fe5f" data-glf-ruid="e9c52e98-6325-4cdb-b89d-f4bf722ec096">Menu</a>
+                                <!-- <a href="contact.html">Contact</a> -->
+                                <a href="policy.html">Mentions Légales</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="footer-newsletter">
+                        <h2>Recevez nos Promotions</h2>
+                        <p>Abonnez-vous pour ne pas manquer nos offres spéciales.</p>
+                        <div class="form">
+                            <form id="newsletter-form" onsubmit="return subscribeNewsletter(event);">
+                                <input type="email" class="form-control" id="newsletter-email" placeholder="Votre email" required aria-label="Votre adresse email">
+                                <button type="submit" class="btn custom-btn" style="margin-top: 10px;">S'abonner</button>
+                            </form>
+                            <div id="newsletter-message" style="display: none; margin-top: 10px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
             <div class="container">
-                <div class="section-header text-center">
-                    <h2>Découvrez notre Menu</h2>
-                </div>
-                <!-- Le contenu du menu reste inchangé -->
-                <div class="menu-tab">
-                    <ul class="nav nav-pills justify-content-center">
-                        <li class="nav-item">
-                            <a class="nav-link active" data-toggle="pill" href="#texmex">Tex Mex</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="pill" href="#assiette">Assiettes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="pill" href="#Tacos">Tacos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="pill" href="#burgers">Burger</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="pill" href="#nan">Sandwich</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="pill" href="#paninis">Paninis</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="pill" href="#Fried">Fried Chicken</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="pill" href="#desserts">Desserts</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="pill" href="#boisson">Boissons</a>
-                        </li>
-                    </ul>
-                    <!-- Contenu des onglets inchangé -->
-                    <div class="tab-content">
-                        <!-- Contenu existant -->
-                    </div>
-                </div>
+                <p>Copyright &copy; 2026 <a href="https://www.chickncogaillac.fr">Chick'N Co Gaillac</a></p>
+                <p>Propulsé par <a href="https://lcdigitale.fr">LC DIGITALE AGENCY</a></p>
             </div>
         </div>
-        <!-- Menu End -->
+    </footer>
 
-        <!-- About Start -->
-        <div class="about">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="about-img">
-                            <img src="img/about.png" alt="Chick'N Co Gaillac">
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="about-content">
-                            <div class="section-header">
-                                <p>À Propos</p>
-                                <h2>CHICK'N CO GAILLAC</h2>
-                            </div>
-                            <div class="about-text">
-                                <p>
-                                    Bienvenue chez <strong>Chick'N Co Gaillac</strong> ! Notre excellente cuisine s’accompagne d’une vaste gamme de plats et de boissons délicieuses. Nous sommes renommés pour notre fast-food fait maison et nos produits frais. L’accueil est notre profession.
-                                </p>
-                                <p>
-                                    Venez pour le déjeuner ou pour le dîner et passez un merveilleux moment dans notre établissement. Nous avons un parking à proximité. Il est important pour nous que nous puissions accueillir tout le monde.
-                                </p>
-                                <a class="btn custom-btn" href="">Réserver une Table</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- About End -->
+    <!-- Scripts Gloria Food -->
+    <script src="https://www.gloriabio.fr/widget/menu/js/loader.js" type="text/javascript" async></script>
+    <script src="https://www.gloriabio.fr/widget/menu/js/gf_widget.js" type="text/javascript" async></script>
+    <script>
+        // Configuration Gloria Food
+        window.gloriaFoodWidgetSettings = {
+            cu_id: "cfe1420f-8cc4-460b-85b2-35867371fe5f",
+            ru_id: "e9c52e98-6325-4cdb-b89d-f4bf722ec096",
+            position: "right",
+            type: "order",
+            lang: "fr"
+        };
+    </script>
 
-        <!-- Contact Start -->
-        <div class="contact">
-            <div class="container">
-                <div class="section-header text-center">
-                    <p>Contact</p>
-                    <h2>Contactez-nous pour toute question</h2>
-                </div>
-                <div class="row align-items-center contact-information">
-                    <div class="col-md-6 col-lg-3">
-                        <div class="contact-info">
-                            <div class="contact-icon">
-                                <i class="fa fa-map-marker-alt"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h3>Adresse</h3>
-                                <p>14 Rue Jean Jaurès, 81600 Gaillac</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="contact-info">
-                            <div class="contact-icon">
-                                <i class="fa fa-phone-alt"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h3>Téléphone</h3>
-                                <p>+33 5 81 40 64 76</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="contact-info">
-                            <div class="contact-icon">
-                                <i class="fa fa-envelope"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h3>Email</h3>
-                                <p>contact@chickncogaillac.fr</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="contact-info">
-                            <div class="contact-icon">
-                                <i class="fa fa-share"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h3>Suivez-nous</h3>
-                                <div class="contact-social">
-                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Le reste du contact reste inchangé -->
-            </div>
-        </div>
-        <!-- Contact End -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
 
-        <!-- Footer Start -->
-        <div class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-7">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="footer-contact">
-                                    <h2>Notre Adresse</h2>
-                                    <p><i class="fa fa-map-marker-alt"></i>14 Rue Jean Jaurès, 81600 Gaillac</p>
-                                    <p><i class="fa fa-phone-alt"></i>+33 5 81 40 64 76</p>
-                                    <p><i class="fa fa-envelope"></i>contact@chickncogaillac.fr</p>
-                                    <div class="footer-social">
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="footer-link">
-                                    <h2>Liens Utiles</h2>
-                                    <a href="">Conditions d'utilisation</a>
-                                    <a href="">Politique de confidentialité</a>
-                                    <a href="">Cookies</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="footer-newsletter">
-                            <h2>Recevez nos promotions</h2>
-                            <p>
-                                Laissez-nous votre adresse e-mail et recevez nos offres promotionnelles.
-                            </p>
-                            <div class="form">
-                                <input class="form-control" placeholder="Email">
-                                <button class="btn custom-btn">Envoyer</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="copyright">
-                <div class="container">
-                    <p>Copyright &copy; <a href="https://www.chickncogaillac.fr">Chick'N Co Gaillac</a>, Tous droits réservés.</p>
-                    <p>Propulsé par <a href="https://lcdigitale.fr">LC DIGITALE AGENCY</a></p>
-                </div>
-            </div>
-        </div>
-        <!-- Footer End -->
+    <script>
+        // Initialisation des animations
+        AOS.init({ 
+            duration: 1000, 
+            once: true,
+            offset: 100
+        });
 
-        <!-- Scripts inchangés -->
-        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="lib/tempusdominus/js/moment.min.js"></script>
-        <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-        <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-        <script src="mail/jqBootstrapValidation.min.js"></script>
-        <script src="mail/contact.js"></script>
-        <script src="js/main.js"></script>
+        // Bouton retour haut de page
+        const backToTopBtn = document.querySelector('.back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        });
+        backToTopBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
 
-        <!-- Cookie Consent -->
-        <script type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/4.0.0/cookie-consent.js" charset="UTF-8"></script>
-        <script type="text/javascript" charset="UTF-8">
-            document.addEventListener('DOMContentLoaded', function () {
-                cookieconsent.run({
-                    "notice_banner_type": "interstitial",
-                    "consent_type": "express",
-                    "palette": "dark",
-                    "language": "fr",
-                    "page_load_consent_levels": ["strictly-necessary"],
-                    "notice_banner_reject_button_hide": false,
-                    "preferences_center_close_button_hide": false,
-                    "page_refresh_confirmation_buttons": false,
-                    "website_name": "https://www.chickncogaillac.fr",
-                    "website_privacy_policy_url": "https://www.chickncogaillac.fr/privacy"
-                });
-            });
-        </script>
-        <noscript>Cookie Consent by <a href="https://www.freeprivacypolicy.com/" rel="nofollow noopener">Free Privacy Policy Generator website</a></noscript>
-    </body>
+        // Formulaire Newsletter
+        function subscribeNewsletter(e) {
+            e.preventDefault();
+            const email = document.getElementById('newsletter-email').value;
+            const messageDiv = document.getElementById('newsletter-message');
+            
+            if (email) {
+                // Simuler l'inscription
+                messageDiv.style.display = 'block';
+                messageDiv.innerHTML = '<div class="alert alert-success">Merci de votre inscription ! Vous recevez nos promotions.</div>';
+                messageDiv.style.color = 'green';
+                document.getElementById('newsletter-email').value = '';
+                
+                // Masquer le message après 5 secondes
+                setTimeout(() => {
+                    messageDiv.style.display = 'none';
+                }, 5000);
+            }
+            return false;
+        }
+
+        // Configuration Owl Carousel
+        $('.owl-carousel').owlCarousel({
+            loop: true, 
+            margin: 0, 
+            nav: true, 
+            autoplay: true, 
+            autoplayTimeout: 5000,
+            responsive: { 
+                0: { items: 1 }, 
+                768: { items: 1 }, 
+                1000: { items: 1 } 
+            }
+        });
+    </script>
+</body>
 </html>
+
